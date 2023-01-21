@@ -19,6 +19,7 @@ Justification for software technologies used:
 ## How to Install and Run the Project
 
 Hardware diagrams TBA
+
 Wiring diagrams TBA
 
 ### Set Up Instructions
@@ -43,6 +44,7 @@ Wiring diagrams TBA
 ## How it works 
 
 Process flow of operations TBA
+
 Description TBA
 
 ### Further developments 
