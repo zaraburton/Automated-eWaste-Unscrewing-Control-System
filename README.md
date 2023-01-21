@@ -13,9 +13,8 @@ Hardware elements used
 
 Justification for software technologies used: 
 - Arduino & python on computer used for ease of development & easy interface with python based vision system 
-- for serial communication between python on the PC and the Arduinos, pyserial was used over pyfirmata for increased precision of stepper motor control 
+- For serial communication between python on the PC and the Arduinos, pyserial was used over pyfirmata for increased precision of stepper motor control 
 
-Operations process flow TBA
 
 ## How to Install and Run the Project
 
