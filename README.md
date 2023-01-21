@@ -6,6 +6,8 @@ This repository is for the control system of the technology demonstrator for aut
 
 ## System Overview 
 
+![System Overview](https://github.com/zaraburton/Automated-eWaste-Unscrewing-Control-System/blob/main/readme_pictures/ddintro2.png)
+
 Hardware elements used 
 - gantry with three stepper motors & limit switches
 - compliant screwdriver end effector with a potentiometer to detect when in contact with phone 
