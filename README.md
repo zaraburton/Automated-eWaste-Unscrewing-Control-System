@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This repository is for the control system of the technology demonstrator for autonomous screw removal from waste phones developed as part of my master's in Engineering Design at the University of Bristol, partnered with the Advanced Manufacturing Research Centre. 
+This repository is for the control system of the technology demonstrator for autonomous screw removal from waste phones developed as part of the group project for my masters in Engineering Design at the University of Bristol, partnered with the Advanced Manufacturing Research Centre. 
 
 | <img src="https://github.com/zaraburton/Automated-eWaste-Unscrewing-Control-System/blob/main/readme_pictures/Automated_Phone_Unscrewing_Poster.png" width="1000"> |
 | :--: |
@@ -91,5 +91,5 @@ Description TBA
 
 
 ## Credits
-- Group project partners Nathan Wooster, who worked on the vision system ([LinkedIn](https://www.linkedin.com/in/nathanwooster/), [GitHub](https://github.com/NWooster)) & Will Smy who worked on the end-effector.
+- Group project partners: Nathan Wooster, who worked on the vision system ([LinkedIn](https://www.linkedin.com/in/nathanwooster/), [GitHub](https://github.com/NWooster)) & Will Smy who worked on the end-effector.
 - Project supervisors Mervyn White at the University of Bristol & Dr Alexi Winters at the AMRC 
