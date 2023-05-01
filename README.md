@@ -2,7 +2,16 @@
 
 ## Project Description
 
-This repository is for the control system of the technology demonstrator for autonomous screw removal from waste phones developed as part of the group project for my masters in Engineering Design at the University of Bristol, partnered with the Advanced Manufacturing Research Centre. 
+This repository is for the control system of the technology demonstrator for autonomous screw removal from waste phones developed as part of the group project for my masters in Engineering Design at the University of Bristol.
+
+### Project Partners:
+- Will Smy developed the end effector 
+- Nathan Wooster developed the vision system ([LinkedIn](https://www.linkedin.com/in/nathanwooster/), [GitHub](https://github.com/NWooster))
+### Supervisors
+- Mervyn White at the University of Bristol
+- Dr Alexi Winters at the Advanced Manufacturing Research Centre
+
+
 
 | <img src="https://github.com/zaraburton/Automated-eWaste-Unscrewing-Control-System/blob/main/readme_pictures/Automated_Phone_Unscrewing_Poster.png" width="1000"> |
 | :--: |
@@ -17,9 +26,22 @@ This repository is for the control system of the technology demonstrator for aut
 
 | <img src="https://user-images.githubusercontent.com/79492615/231604244-7f5eaf6e-5e4f-4834-a04e-da4357fa4380.jpg" width="1000">  |
 | :--: |
-| System architecture diagrams (MC = microcontroller/Arduino) |
+| System diagrams (MC = microcontroller/Arduino) |
 
-Hardware elements used 
+Python packages used: sys, keyboard, time, serial, math, numpy, argparse
+
+Justification for software technologies used: 
+- Arduino & python on computer used for ease of development & easy interface with python based vision system 
+- For serial communication between python on the PC and the Arduinos, pyserial was used over pyfirmata for increased precision of stepper motor control 
+
+Hardware elements used
+- Gantry with three NEMA23 stepper motors, TB6600 stepper motor drivers set to 1/32 microstepping & limit switches
+- Compliant screwdriver end effector driven by a DC motor with a potentiometer to detect when in contact with phone 
+- Overhead camera 
+- 3x Arduino microcontrollers for (1) the gantry,  (2) DC motor in the end effector- including a motor shield, and (3) the potentiometer in the end effector
+- PC/laptop used as central contoller running python control scripts
+- The camera, gantry Arduino & DC motor Arduino are connected via USB to laptop/PC 
+- The potentiometer Arduino is directed wireded via digital IOs to the gantry Arduino
 - Gantry with three NEMA23 stepper motors, TB6600 stepper motor drivers set to 1/32 microstepping & limit switches
 - Compliant screwdriver end effector driven by a DC motor with a potentiometer to detect when in contact with phone 
 - Overhead camera 
@@ -28,24 +50,15 @@ Hardware elements used
 - The camera, gantry Arduino & DC motor Arduino are connected via USB to laptop/PC 
 - The potentiometer Arduino is directed wireded via digital IOs to the gantry Arduino
 
-Python packages used: sys, keyboard, time, serial, math, numpy, argparse
 
-Justification for software technologies used: 
-- Arduino & python on computer used for ease of development & easy interface with python based vision system 
-- For serial communication between python on the PC and the Arduinos, pyserial was used over pyfirmata for increased precision of stepper motor control 
-
-## How to Install and Run the Project
-<!---
-Hardware diagrams TBA
-
-Wiring diagrams TBA
--->
+## How it works
 
 | <img src="https://user-images.githubusercontent.com/79492615/231604542-66e96f34-62b1-462b-ab2f-c10b8ae96e50.jpg" width="700"> |<img src="https://user-images.githubusercontent.com/79492615/231605217-e94b2d2b-b52e-46d8-b41c-2e2a9e5c9821.png" width="300">
 | :--: | :--: |
-| Control software implementation | Whats involved in each action |
+| Control software implementation | What's involved in each action |
 
-### Set Up Instructions
+<details><summary>Set Up Instructions</summary>
+<br>
 #### Hardware 
 - Set up hardware as described above & upload code to Arduino 
 - Set com ports for the gantry and dc motor Arduinos in main() of robot_control.py
@@ -64,32 +77,17 @@ Wiring diagrams TBA
 - Position phone in baseplate
 - Run robot_control.py in terminal 
 - Follow instructions printed in the terminal 
+</details>
 
 | <img src="https://github.com/zaraburton/Automated-eWaste-Unscrewing-Control-System/blob/main/readme_pictures/1screw_mm_output.jpg" width="500">  | <img src="https://user-images.githubusercontent.com/79492615/231605884-f8048477-d865-4600-818d-abd03ba17fe9.png" width="300"> |
 | :--: | :--: | 
 | Example of vision system output | Screw searching path |
 
 
-<!---
-## How it works 
 
-Process flow of operations TBA
+## Future work
 
-Description TBA
--->
+- Digital multimeter reading integration to verify engagement and screw removal
+- Optimisation of spiralling to maximise success rate & minimise operation time
+- Testing at increased speeds and on larger sample of phones
 
-### Further developments 
-
-#### Hardware
-- Recentering of end effector after contact w/ phone
-
-#### Software
-- Calibration of image - real world coordinates in vision system
-- Bug fixing of vision system to repeatedly set datum from exact real world coordinate
-- Multimeter reading integration to verify engagement and screw removal
-- Further optimisation of spiralling to maximise success rate & minimise operation time
-
-
-## Credits
-- Group project partners: Nathan Wooster, who worked on the vision system ([LinkedIn](https://www.linkedin.com/in/nathanwooster/), [GitHub](https://github.com/NWooster)) & Will Smy who worked on the end-effector.
-- Project supervisors Mervyn White at the University of Bristol & Dr Alexi Winters at the AMRC 
