@@ -87,7 +87,7 @@ To run:
 
 | <img src="https://github.com/zaraburton/Automated-eWaste-Unscrewing-Control-System/blob/main/readme_pictures/1screw_mm_output.jpg" width="500">  | <img src="https://user-images.githubusercontent.com/79492615/231605884-f8048477-d865-4600-818d-abd03ba17fe9.png" width="300"> |
 | :--: | :--: | 
-| Example of vision system output | Screw searching path |
+| Example of vision system output | Screw searching path increased success rate from 12 to 60% |
 
 
 
