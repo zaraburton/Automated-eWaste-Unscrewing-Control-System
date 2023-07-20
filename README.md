@@ -60,20 +60,26 @@ Hardware elements used
 <details><summary>Set Up Instructions</summary>
 <br>
 Hardware:
+  
 - Set up hardware as described above & upload code to Arduino 
 - Set com ports for the gantry and dc motor Arduinos in main() of robot_control.py
-#### Gantry system calibration
+
+Gantry system calibration:
+
 - Calibrate steps/mm value - use a dial guage method like with 3D printer calibration (alright for bigger screws), or use the gantry_step_count_test arduino script on the gantry arduino to count the number of steps from multiple known points to the limit switches. Set this in main() func of robot_control.py, line 63 
 - Assuming the vision system datum is in a different place to the gantry limit switches, count the number of steps from the vision system datum to the X and Y limit switches and enter in gantry_cntrol.py on line 261 in the start_sequence_for_vsa() (this function runs the initial start sequence to take a photograph and return coordinates of the phone screws, fiddle with this if your screw coordinates are way off.) 
 - Values for z heights for the end effector moving over the baseplate and for taking photos may need to be adjusted based on hardware set-up - gantry_control.py lines 220-226
 <!--- - Calibrate potentiometer value for touching phone (detailed instructions TBA) -->
+
 Vision system set up:
+
 - Download vision system code developed by Nathan Wooster from [this repo](https://github.com/NWooster/screw_vision_system)
 - Copy all files from the Run_vision_system folder into the Python control code folder of this repo
 - Create 2 folders called images_taken and images_processed
 - When running, if the images_taken folder contains laptop webcam mugshots, change the "1" in the last line of take_picture.py to "0" or vice versa (this 1/0 value for webcam/USB camera is laptop model dependent).
 
 To run:
+
 - Position phone in baseplate
 - Run robot_control.py in terminal 
 - Follow instructions printed in the terminal 
