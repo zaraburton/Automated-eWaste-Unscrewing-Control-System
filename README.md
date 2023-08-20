@@ -2,14 +2,17 @@
 
 ## Project Description
 
-This repository is for the control system of the technology demonstrator for autonomous screw removal from waste phones developed as part of the group project for my masters in Engineering Design at the University of Bristol.
+This repository is for the control system of the technology demonstrator for autonomous screw removal from waste phones developed as part of our Engineering Design masters group design project at the University of Bristol. This led on from our bachelors research projects on automated phone disassembly. 
 
 ### Project Partners:
-- Will Smy developed the end effector 
-- Nathan Wooster developed the vision system ([LinkedIn](https://www.linkedin.com/in/nathanwooster/), [GitHub](https://github.com/NWooster))
+- Will Smy 
+- Nathan Wooster ([LinkedIn](https://www.linkedin.com/in/nathanwooster/), [GitHub](https://github.com/NWooster))
+- Smruthi Radhakrishnan ([LinkedIn](https://www.linkedin.com/in/smruthi-radhakrishnan/), [GitHub](https://github.com/smruthi-radhakrishnan))
+- Alex Straw ([LinkedIn](https://www.linkedin.com/in/alex-straw/), [GitHub](https://github.com/alex-straw/alex-straw))
 ### Supervisors
 - Mervyn White at the University of Bristol
 - Dr Alexi Winters at the Advanced Manufacturing Research Centre
+- Jeremy Hadall with the Manufacturing Technology Centre 
 
 
 
@@ -87,7 +90,7 @@ To run:
 
 | <img src="https://github.com/zaraburton/Automated-eWaste-Unscrewing-Control-System/blob/main/readme_pictures/1screw_mm_output.jpg" width="500">  | <img src="https://user-images.githubusercontent.com/79492615/231605884-f8048477-d865-4600-818d-abd03ba17fe9.png" width="300"> |
 | :--: | :--: | 
-| Example of vision system output | Screw searching path increased success rate from 12 to 60% |
+| Example of vision system output | Screw searching path |
 
 
 
