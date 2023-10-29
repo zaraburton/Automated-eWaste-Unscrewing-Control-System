@@ -15,6 +15,9 @@ This repository is for the control system of the technology demonstrator for aut
 - Jeremy Hadall with the Manufacturing Technology Centre 
 
 
+| <img src="https://github.com/zaraburton/Automated-eWaste-Unscrewing-Control-System/blob/main/readme_pictures/Automated_Phone_Unscrewing_Poster.png" width="1000"> |
+| :--: |
+| Project Poster |
 
 
 | [<img src="https://github.com/zaraburton/Automated-eWaste-Unscrewing-Control-System/blob/main/readme_pictures/vibes.JPG" width="700">](https://drive.google.com/file/d/17BihyDyC95Abv2gOByDlfVvxRjB9EVz_/view?usp=sharing) |
